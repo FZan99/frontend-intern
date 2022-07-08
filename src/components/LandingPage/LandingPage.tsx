@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from "../../img/book3.jpg"
+import img2 from "../../img/read.jpg"
 
 function LandingPage() {
   return (
@@ -33,7 +35,7 @@ md:flex-row-reverse md:container md:space-x-reverse
           <div className="w-full items-center h-96 md:h-200 lg:h-52  overflow-hidden relative">
             <img
               className="absolute inset-0 h-full w-full object-cover"
-              src={"src/img/book3.jpg"}
+              src={img1}
             />
             <div className="absolute inset-0 bg-gray-400 bg-opacity-75"></div>
 
@@ -84,7 +86,7 @@ md:flex-row-reverse md:container md:space-x-reverse
           >
             <img
               className="w-full h-full object-cover"
-              src={"src/img/read.jpg"}
+              src={img2}
             ></img>
           </div>
           <aside className="flex flex-col bg-split-white-green h-[22rem] items-start w-full mx-auto">
