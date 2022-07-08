@@ -1,6 +1,7 @@
 import React from "react";
 import AdminLogin from "./components/AdminLogin/AdminLogin";
 import Homepage from "./components/Homepage/Homepage";
+import LandingPage from "./components/LandingPage/LandingPage";
 import AddAdmin from "./components/AddAdmin/AddAdmin";
 import LoanHistory from "./components/LoanHistory/LoanHistory";
 import Book from "./components/Book/Book";
@@ -16,7 +17,8 @@ function App() {
     <Router>
       <QueryClientProvider client={queryClient}>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/Homepage" element={<Homepage />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/" element={<PrivateRoute />}>
           <Route path="/addAdmin" element={<AddAdmin />} />
